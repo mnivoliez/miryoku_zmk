@@ -1,0 +1,4 @@
+outboard_repository=mnivoliez/ezboard-shield-module
+outboard_ref=master
+outboard_from=/
+outboard_to=boards/shields/ezboard
