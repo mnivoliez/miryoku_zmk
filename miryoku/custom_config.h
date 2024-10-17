@@ -38,8 +38,7 @@ MIRYOKU_X(MEDIA,  "Media") \
 MIRYOKU_X(NUM,    "Num") \
 MIRYOKU_X(SYM,    "Sym") \
 MIRYOKU_X(FUN,    "Fun") \
-MIRYOKU_X(GAME,   "Game") \
-MIRYOKU_X(GAMENUM,"GNum")
+MIRYOKU_X(GAME,   "Game") 
 
 #define MIRYOKU_LAYERMAPPING_GAME( \
      K00, K01, K02, K03, K04,      K05, K06, K07, K08, K09, \
