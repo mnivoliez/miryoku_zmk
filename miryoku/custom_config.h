@@ -67,6 +67,6 @@ MIRYOKU_X(GAMENUM,"GNum")
 #define U_SYM         8
 #define U_FUN         9
 #define U_GAME       10
-#define U_GAMEUM     11
+#define U_GAMENUM    11
 
 #endif
