@@ -6,4 +6,4 @@ jobs:
     secrets: inherit
     with:
       board: '["nice_nano_v2"]'
-      shield: '["ezboard_left nice_view","ezboard_right nice_view"]'
+      shield: '["ezboard_left nice_view_adapter nice_view","ezboard_right nice_view_adapter nice_view"]'
