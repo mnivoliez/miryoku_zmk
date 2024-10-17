@@ -16,8 +16,6 @@ U_NP,              U_NP,              &kp LALT,          &kp SPC,           &mo 
 &kp LCTRL,         &kp NUM_3,         &kp X,             &kp NUM_4,         &kp NUM_7,          &kp BSLH,          &kp F1,            &kp F2,            &kp F3,            &kp GRAVE,        \
 U_NP,              U_NP,              &to U_BASE,        &kp SPC,           &none,              &kp MINUS,         &kp NUM_0,         &kp DOT,           U_NP,              U_NP
 
-#if defined (MIRYOKU_KEYBOARD_EZBOARD)
-
 #define MIRYOKU_LAYERMAPPING_BASE( \
      K00, K01, K02, K03, K04,      K05, K06, K07, K08, K09, \
      K10, K11, K12, K13, K14,      K15, K16, K17, K18, K19, \
@@ -25,17 +23,6 @@ U_NP,              U_NP,              &to U_BASE,        &kp SPC,           &non
      N30, N31, K32, K33, K34,      K35, K36, K37, N38, N39 \
 ) \
 XXX  K00  K01  K02  K03  K04       K05  K06  K07  K08  K09  &u_to_U_GAME \
-XXX  K10  K11  K12  K13  K14       K15  K16  K17  K18  K19  XXX \
-XXX  K20  K21  K22  K23  K24       K25  K26  K27  K28  K29  XXX \
-               K32  K33  K34       K35  K36  K37
-
-#define MIRYOKU_LAYERMAPPING_GAME( \
-     K00, K01, K02, K03, K04,      K05, K06, K07, K08, K09, \
-     K10, K11, K12, K13, K14,      K15, K16, K17, K18, K19, \
-     K20, K21, K22, K23, K24,      K25, K26, K27, K28, K29, \
-     N30, N31, K32, K33, K34,      K35, K36, K37, N38, N39 \
-) \
-XXX  K00  K01  K02  K03  K04       K05  K06  K07  K08  K09  &u_to_U_BASE \
 XXX  K10  K11  K12  K13  K14       K15  K16  K17  K18  K19  XXX \
 XXX  K20  K21  K22  K23  K24       K25  K26  K27  K28  K29  XXX \
                K32  K33  K34       K35  K36  K37
@@ -54,6 +41,17 @@ MIRYOKU_X(FUN,    "Fun") \
 MIRYOKU_X(GAME,   "Game") \
 MIRYOKU_X(GAMENUM,"GNum")
 
+#define MIRYOKU_LAYERMAPPING_GAME( \
+     K00, K01, K02, K03, K04,      K05, K06, K07, K08, K09, \
+     K10, K11, K12, K13, K14,      K15, K16, K17, K18, K19, \
+     K20, K21, K22, K23, K24,      K25, K26, K27, K28, K29, \
+     N30, N31, K32, K33, K34,      K35, K36, K37, N38, N39 \
+) \
+XXX  K00  K01  K02  K03  K04       K05  K06  K07  K08  K09  &u_to_U_BASE \
+XXX  K10  K11  K12  K13  K14       K15  K16  K17  K18  K19  XXX \
+XXX  K20  K21  K22  K23  K24       K25  K26  K27  K28  K29  XXX \
+               K32  K33  K34       K35  K36  K37
+
 #define MIRYOKU_LAYOUTMAPPING_GAMENUM MIRYOKU_MAPPING
 
 #define U_BASE        0
@@ -68,5 +66,3 @@ MIRYOKU_X(GAMENUM,"GNum")
 #define U_FUN         9
 #define U_GAME       10
 #define U_GAMENUM    11
-
-#endif
